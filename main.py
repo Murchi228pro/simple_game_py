@@ -107,7 +107,7 @@ while True:
         score = fonts['papyrus'].render(
             'score: %d' % person.score, False, PERSON_COLOR)
         before_death_text = fonts['papyrus'].render(
-            'secs: %d' % int(
+            'time: %d' % int(
                 before_death), False, PERSON_COLOR if before_death > 3.0 else pygame.Color(250, 0, 0)
         )
         window.blit(score, (10, 10))
